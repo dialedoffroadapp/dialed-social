@@ -1,0 +1,89 @@
+Privacy Policy
+Effective October 14, 2026
+## Overview
+This policy explains what Atlas Systems LLC ("we", "us") collects when you use the Dialed Offroad app (the "Service"), what we do with it, who else handles it, and how long we keep it.
+• We do not sell your personal information.
+• We do not show ads, and the app contains no advertising code.
+• We do not track you across other companies' apps or websites.
+• You can delete your account, and the data stored with it, from the Profile page.
+## What We Collect
+• Account: your email address, a display name, and the sign-in method you used (email and password, Sign in with Apple, or Sign in with Google). Passwords are handled by our sign-in provider and are never stored in readable form.
+• Your bikes and setups: make, model, year, nickname, engine hours, suspension settings, spring rates, suspension work and service entries, a tuner's sheet if you enter one, sag measurements, tire setup, and photos of your bike if you add them.
+• About you as a rider: weight, skill level, riding discipline, the terrain you pick, your goals, and anything you type about how the bike feels.
+• Ride days: the date, each moto or ride and how long it lasted, how the bike felt, the conditions you pick and any notes you type, the track or riding area, and the ride day's location (see Location).
+• Where you ride: your country, state, a riding zone we derive from the state, and an optional area name you type.
+• Tracks and reports: riding spots you add (a name and a location) and track reports you post (a status and an optional note).
+• A profile photo, if you add one.
+• Purchases: your plan, its status and dates, from RevenueCat and the store you bought from. We never see or store card numbers.
+• Usage and error reports: which screens and features you use, the app version, and when something breaks, the screen, the error message and the build. We use these to fix problems and to count how features are used.
+• Before you sign in: if you build a tune without an account, we store that request (your bike and rider answers and anything you typed), a random install id, and your IP address, which we use to limit abuse. If you create an account within 48 hours on the same phone, those requests are linked to your new account and the IP address is removed from them.
+• Our hosting provider keeps routine server logs, including IP addresses, for a short time for security and troubleshooting.
+## Location
+The app asks for location once, from the Spots card on Home, and only while you are using the app. It never reads your location in the background. If you allowed location in an earlier version of the app, that permission carries over. Everything below happens only if you allow location, and the app works without it.
+• Tunes: when you build or refine a tune, we store your location rounded to two decimal places (about 1 km) with that tune, linked to your account. It is not used to calculate your settings and is not sent to the language model. It is removed from the tune after 180 days.
+• Ride days: we store the ride day's location rounded to three decimal places (about 110 m) to suggest the track you are at. It stays with the ride day until you delete your account.
+• Tracks you add: the spot's location, rounded to about 110 m.
+• Spots near you and directions: your location (rounded to about 110 m) is used to find nearby spots and their distance. The search is answered by our server and is not saved. If you tap Directions, the spot is opened in Apple Maps or Google Maps, which handle your location under their own policies.
+• Where you ride: your phone's built-in map service (Apple's on iPhone, Google's on Android) turns your location into a state and country. We store the state, the country and the zone, never the coordinates. A state you pick by hand is never overwritten.
+• Weather, when the app shows it: your location is sent to Open-Meteo to get a forecast. Once a week we also record your city, state and country, without coordinates, so we know where to add riding spots. Those weekly records are deleted after 180 days.
+You can turn location off at any time in your phone's settings.
+## The Language Model (OpenAI)
+Dialed uses a language model from OpenAI for two jobs.
+• Baseline tunes: when you build or rebuild a baseline, we send OpenAI your bike's year, make and model, your discipline, terrain, weight, skill level and riding style, your goals, anything you typed about the bike, the temperature and elevation if given, and your tuner's sheet if you entered one. Depending on how our engine is set, the model either suggests the starting settings, which our rules then check and limit, or writes the notes that explain settings our formula already chose. Text the model wrote is labeled in the app.
+• Notes you type: the moto or ride notes and conditions notes you type on a ride day are sent to OpenAI to sort them into the symptoms our tuning rules use.
+We do not send OpenAI your name, email address, account id, location or photos. OpenAI processes this data to answer each request under its API terms, which state that data sent through the API is not used to train its models by default. Please do not type personal information about yourself or anyone else into a note.
+## Sign in with Apple and Google
+If you sign in with Apple or Google, that company tells us your email address (or an Apple private relay address, if you chose Hide My Email), your name, and an account id. We never receive your Apple or Google password.
+When you delete an account made with Sign in with Apple, Apple asks you to confirm once more, and we then ask Apple to revoke Dialed's access to your Apple ID. If that request fails, your account is still deleted, and you can remove Dialed yourself in your Apple ID settings under Sign in with Apple. For Google, you can remove Dialed's access in your Google Account settings.
+## What Other Riders Can See
+Dialed has no public profiles and no feed. Other riders do not see your name, bikes, setups, ride days or notes.
+• Profile photo: stored at a public web address. The app does not show it to other riders, but anyone who has the address could open it. Bike photos are private and open only through links that expire after 10 minutes.
+• Track reports: the status and note you post are visible to other signed-in riders, without your name.
+• Tracks you add: visible only to you until we verify them. Once verified, the track's name and location are visible to every rider.
+• Setup cards: shared only when you share one yourself.
+## Notifications and Email
+Dialed does not send push notifications from our servers. If you allow notifications, the app schedules a few reminders on your phone: before your Pro days end, a spring reminder if you park Pro for winter, and one reminder to finish signing up if you built a tune without an account. You can turn them off in your phone's settings.
+We send email only about your account, such as sign-in confirmations and password resets, plus replies when you write to us. We do not send marketing email. If that changes, we will update this policy first and you will be able to unsubscribe.
+## How We Use Information
+• Build, refine and save your tunes, setups and ride days.
+• Show riding spots, track reports and directions.
+• Run your plan and purchases.
+• Fix bugs, keep the Service secure, limit abuse, and count how features are used so we know what to improve. We look at these counts in groups, not to profile you.
+• Answer you when you contact us.
+• Comply with the law.
+## Who Handles Your Data
+These service providers handle data for us, only to run the Service:
+• Supabase: our database, sign-in, file storage and server functions. Data is stored in the United States.
+• OpenAI: the language model, as described above.
+• RevenueCat: manages purchases. It receives your account id, your purchase and subscription history, and a marker when you log your first ride day.
+• Apple: Sign in with Apple, App Store purchases, the map service that turns a location into a state on iPhone, and Apple Maps if you open directions.
+• Google: Sign in with Google, Google Play purchases, the map service that turns a location into a state on Android, and Google Maps if you open directions.
+• Expo: delivers app updates. When the app checks for an update, Expo receives the app version, the platform, a random update id and your IP address.
+• Open-Meteo: weather, when the app shows it.
+We may also share information if the law requires it, to protect riders or the Service, or as part of a merger or sale of our business, in which case this policy would continue to apply.
+## How Long We Keep It
+• Your account and what you save: until you delete your account.
+• Tunes built without an account and never linked to one: deleted after 90 days.
+• After 180 days we remove from your stored records: the location saved with a tune, every note you typed (in a tune request, a moto or ride, conditions, a service entry, a track report, or a next-time note), the area name you typed for where you ride, and the weekly city records. A track you added is no longer linked to you. The rest of each record (settings, dates, the symptoms you picked) stays until you delete your account.
+• The ride day's location is kept with the ride day until you delete your account.
+## Deleting Your Account
+On the Profile page, tap Delete account. This deletes your account, profile, rider profile, bikes, setups, ride days, notes, track reports, photos, purchase records we hold, and usage and error reports.
+• Tracks you added that we had not verified are deleted. A track we verified stays in the track list for every rider, without your name.
+• RevenueCat, Apple and Google keep their own purchase records under their own policies.
+• Copies in our provider's backups and logs are removed as those expire.
+• Deleting your account does not cancel a subscription. Cancel it in the account settings of the store you subscribed through.
+You can also ask us to delete your account, or to send you a copy of your data, by emailing dialedoffroadapp@gmail.com from the address on your account.
+## Your Choices and Rights
+• See and change your profile, bikes and setups in the app.
+• Turn location and notifications on or off in your phone's settings.
+• Ask for a copy of your data, a correction, or deletion. Depending on where you live (for example California or the European Union), you may have further rights, and we will honor them. We will not treat you differently for using them.
+## Security
+Data travels encrypted between the app and our servers, and your records can be read only by your account, apart from what the section What Other Riders Can See describes. No system is completely secure, so we cannot promise that your data will never be accessed without permission. If that happens, we will tell you as the law requires.
+## Children
+The Service is not for children under 13, and we do not knowingly collect information from them. If you think a child under 13 has given us information, email us and we will delete it.
+## Where Data Is Processed
+We are based in the United States and your data is stored there. Our providers may process it in other countries under their own safeguards.
+## Changes to This Policy
+When we change this policy we update the date at the top. If a change is material, we tell you in the app before it applies to you.
+## Contact
+Atlas Systems LLC. Questions or requests: email dialedoffroadapp@gmail.com.

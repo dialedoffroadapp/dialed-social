@@ -1,0 +1,59 @@
+Terms of Service
+Effective October 14, 2026
+## 1. Agreement to These Terms
+These terms are an agreement between you and Atlas Systems LLC ("we", "us") for the Dialed Offroad app (the "Service"). By creating an account or using the Service, you agree to them and to our Privacy Policy. If you do not agree, do not use the Service.
+You must be at least 13 to use the Service. If you are under 18, you may use it only with a parent's or guardian's permission, and they agree to these terms for you.
+On iPhone, Apple's standard Licensed Application End User License Agreement also applies. See section 18.
+## 2. What the Service Does
+Dialed suggests starting settings for your dirt bike's suspension and tire pressure, and suggests changes based on how you say the bike felt. The suggestions come from our rules, our formula, manufacturer data and, for some text and some starting settings, a language model. We may change, add or remove features at any time.
+## 3. No Professional Advice
+Every setting, note and suggestion in the Service is general information, not professional advice. It is not a substitute for a qualified suspension technician or mechanic, or for your owner's manual. Suggestions can be wrong: model data can contain errors, text written by the language model can be mistaken, and the Service cannot see or feel your bike. You decide whether to make any change, and you are responsible for checking each setting against your owner's manual before you ride.
+## 4. Motorsports Are Dangerous: You Assume the Risk
+Riding a dirt bike is a dangerous activity. It can cause serious injury, permanent disability, death, and damage to your bike and other property, even when the rider is skilled, the bike is in good condition and the setup is correct. Changing suspension settings, air pressure, sag or tire pressure changes how a bike handles and can make it harder to control.
+By using the Service you agree that:
+(a) you ride at your own risk, and you knowingly and voluntarily assume all risks of riding, of adjusting your bike, and of using any suggestion from the Service, whether those risks are known or unknown;
+(b) after any change you will test the bike at low speed in a safe, open area before riding hard, and go back to your previous settings if anything feels wrong;
+(c) you will never adjust the bike or use the app while riding, and you will wear proper protective gear, ride within your ability, and follow the law, land access rules and each track's rules; and
+(d) you are responsible for the mechanical condition and safe operation of your bike.
+TO THE FULLEST EXTENT THE LAW ALLOWS, YOU RELEASE Atlas Systems LLC AND ITS OWNERS, EMPLOYEES AND CONTRACTORS FROM ANY CLAIM FOR INJURY, DEATH, OR DAMAGE TO PROPERTY ARISING FROM RIDING OR FROM ADJUSTING A BIKE, INCLUDING WHEN A SETTING CAME FROM THE SERVICE. Some places do not allow this kind of release, so parts of it may not apply to you.
+## 5. Your Account
+Give accurate information, keep your sign-in secure, and tell us if you think someone else is using your account. You are responsible for what happens under your account. One person per account.
+## 6. Free Plan and Pro
+The free plan includes, among other things, one bike with one setup, a baseline tune, rebuilding that baseline, one free refinement per bike, and logging every ride day. Pro adds refinements after the free one, the setup story (every past version), more setups on a bike, and a second bike. What each plan includes is shown in the app and may change; if we take away something you have paid for during a paid period, we will tell you.
+## 7. Your Pro Days (the Pro Trial)
+An account that has never bought Pro gets one Pro trial, shown in the app as your Pro days. It starts when you save your first tune in Dialed 3.0 and ends at the end of your third ride day or 21 days after it started, whichever comes first. A ride day is a calendar day on which you log a ride, moto or refinement. The trial covers the bike you are tuning; a second bike needs a paid plan.
+The trial does not ask for payment details, nothing is charged when it ends, and it never turns into a subscription by itself. When it ends you move to the free plan. Nothing is deleted: setups that need Pro stay saved and open again if you subscribe. One trial per person; creating extra accounts to get more trials is not allowed.
+## 8. Subscriptions, Auto-Renewal and Cancellation
+Pro is sold as a monthly or annual subscription through Apple's App Store and Google Play. The price is shown in the app before you buy, from the store. Payment is charged to your store account when you confirm the purchase.
+Your subscription renews automatically at the end of each period, at the then current price, unless you turn off auto-renewal at least 24 hours before the period ends. The store charges the renewal within the 24 hours before the period ends. If the price changes, the store tells you first under its rules.
+Manage or cancel in your store account settings (Profile, Manage subscription, opens them). When you cancel, Pro stays on until the end of the period you paid for, then you move to the free plan. Deleting the app or your account does not cancel a subscription. Purchases and refunds are handled by the store under its own terms; we cannot issue refunds ourselves.
+## 9. Park Pro for Winter
+Park Pro for winter, on the Profile page, is a shortcut for the off season, not a separate product or price. On iPhone it opens your App Store subscription settings so you can turn off auto-renewal: Pro stays on until your paid time ends. On Android, where Google Play offers a pause for your plan, it opens Google Play so you can pause it: Pro is paused until the plan resumes. Either way, your bikes, setups and ride days stay, and if you allow notifications the app reminds you in March. When you come back, the store's price at that time applies.
+## 10. Your Content and the License You Give Us
+You own what you add: bike details, notes, photos, track names and track reports ("your content"). You give us a worldwide, non-exclusive, royalty-free license to host, store, copy, process, send and display your content only to run, secure and improve the Service. That includes showing your track reports, and tracks you added once we verify them, to other riders, and sending notes you type to our service providers as the Privacy Policy describes. The license ends when you delete the content or your account, except that a verified track stays available to riders without your name, and copies in backups expire on their own schedule.
+If you send us feedback or ideas, we may use them without owing you anything.
+## 11. Content Rules
+You are responsible for your content. Do not post anything that:
+is unlawful, threatening, harassing, hateful, sexual or violent; infringes someone else's rights, including photos you do not have the right to use; contains anyone's personal information; pretends to be someone else; or is spam.
+Track reports must be honest and first-hand. Do not add a track on private land, or report one as open, unless you know riders are allowed there. A report is one rider's view, never a statement that a track is open, safe or legal to ride. We may remove any content and suspend accounts that break these rules.
+## 12. Acceptable Use
+Do not misuse the Service: no reverse engineering, scraping, automated requests, getting around limits or plan restrictions, interfering with the Service, using it to break the law, or using it to build a competing product.
+## 13. Services From Other Companies
+The Service relies on other companies, including Apple, Google, RevenueCat, OpenAI and Supabase, and can open Apple Maps or Google Maps for directions. Their own terms apply to what they do, and we are not responsible for them.
+## 14. Deleting Your Account and Ending Access
+You can delete your account at any time from the Profile page with Delete account, or by emailing us. Deletion removes your account and its data as the Privacy Policy describes and cannot be undone. It does not cancel a subscription: cancel that in your store account settings.
+We may suspend or end your access if you break these terms or to protect riders or the Service. Sections 3, 4, 10, 15, 16, 17 and 20 continue after your account ends.
+## 15. Disclaimers
+THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT ANY SETTING IS SAFE OR SUITED TO YOU OR YOUR BIKE, OR THAT THE SERVICE WILL BE UNINTERRUPTED OR FREE OF ERRORS.
+## 16. Limitation of Liability
+TO THE FULLEST EXTENT THE LAW ALLOWS, Atlas Systems LLC IS NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR FOR LOST DATA OR PROFITS, AND ITS TOTAL LIABILITY FOR ANY CLAIM ABOUT THE SERVICE IS LIMITED TO THE AMOUNT YOU PAID FOR PRO IN THE 12 MONTHS BEFORE THE CLAIM.
+## 17. Indemnity
+You agree to cover our losses and costs, including reasonable legal fees, from a claim by someone else that arises from your content, your riding, or your breaking these terms.
+## 18. Apple Terms (iPhone)
+If you got the app from Apple's App Store, Apple's standard Licensed Application End User License Agreement also applies. These terms are between you and us, not Apple. Apple has no duty to provide maintenance or support for the app. If the app fails to meet a warranty that applies, you may tell Apple and Apple will refund the purchase price, if any; Apple has no other warranty duty. We, not Apple, are responsible for any claim about the app, including product liability, consumer protection, privacy and intellectual property claims. Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them against you. You confirm you are not in a country under a U.S. government embargo and are not on a U.S. government list of prohibited or restricted parties.
+## 19. Changes to These Terms
+When we change these terms we update the date at the top. If a change is material, we tell you in the app before it applies to you. Using the Service after a change takes effect means you accept the new terms.
+## 20. Governing Law
+These terms are governed by the laws of Idaho, USA, and disputes go to the state or federal courts in Idaho, unless the law where you live gives you the right to bring a claim there.
+## 21. Contact
+Atlas Systems LLC. Questions? Email dialedoffroadapp@gmail.com.
