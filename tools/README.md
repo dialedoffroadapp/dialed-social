@@ -1,6 +1,6 @@
 # Dialed Offroad weekly static posts: how a week gets made
 
-One week module in `tools/weeks/<week>.py` produces everything the pipeline needs. `<week>` is the Sunday River reviews it; the posts run Monday to Saturday after that Sunday, one a day at 6:40 pm Boise. Sunday has no post.
+One week module in `tools/weeks/<week>.py` produces everything the pipeline needs. `<week>` is the Sunday River reviews it; the posts run Monday to Saturday after that Sunday, two a day, at 12:40 pm and 6:40 pm Boise. Sunday has no post.
 
 ```
 python3 tools/publish_week.py tools/weeks/2026-11-01.py
@@ -17,7 +17,7 @@ WEEK = [
     "title": "Settings card: 2024 Yamaha YZ250F",
     "design": "sheet",                          # one of the designs below; vary them across the week
     "kind": "carousel",                         # image (one slide) or carousel (2 to 10)
-    "scheduled_at": "2026-11-04T01:40:00Z",     # 6:40 pm Boise in UTC (MST from Nov 1: 01:40Z next day; MDT: 00:40Z)
+    "scheduled_at": "2026-11-04T01:40:00Z",     # the slot in UTC. Boise is MST from Nov 1: 12:40 pm = 19:40Z same day, 6:40 pm = 01:40Z next day (MDT: 18:40Z and 00:40Z)
     "caption": "...",                           # the Instagram caption without hashtags; Facebook gets it with "Link in bio." swapped for the store link
     "hashtags": "#dirtbikes #moto ... #dialedoffroad",
     "story": "...",                             # a Story idea for the same day, shown on the page, never posted automatically
@@ -54,7 +54,9 @@ Every design draws the real mark from `tools/logo/` and sets type in Barlow Cond
 
 ## A week's mix
 
-Six posts, Monday to Saturday, no two neighbours with the same design: one settings card for a bike people asked about (the `social_bike_requests` view on prod lists them), one save-worthy carousel (cheat sheet, clicker explainer, pre-ride checklist, sag how-to), one hot take, one myth or "nobody tells you" list, one app-screens post when there is a feature worth showing, one that answers last week's most common comment. Repeat a theme only after four weeks; `posts/manifest-*.json` and `tools/weeks/` are the record of what already ran.
+Twelve posts, Monday to Saturday, two a day. The midday post (12:40 pm) is the keeper: a settings card for a bike people asked about (the `social_bike_requests` view on prod lists them), a save-worthy carousel (cheat sheet, clicker explainer, pre-ride checklist, sag how-to), a myth or "nobody tells you" list, a symptom-to-fix sheet. The evening post (6:40 pm) is the talker: a hot take, an app-screens post when there is a feature worth showing, a split (stock vs you), a one-slide answer to the week's most common comment. No two neighbouring posts with the same design, and no design more than three times in a week. At least two settings cards a week when clean rows exist, never more than one a day. Repeat a theme only after four weeks; `posts/manifest-*.json` and `tools/weeks/` are the record of what already ran.
+
+TikTok gets the same slides: the Sunday Review page ticks TikTok on every static post by default and the pipeline posts them as photo carousels there once TikTok is connected. Nothing about the week module changes for that.
 
 ## What is not here
 

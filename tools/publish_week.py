@@ -49,7 +49,7 @@ def check(week, week_id):
         except Exception:
             die(f"{slug}: scheduled_at must be ISO 8601 UTC like 2026-11-03T01:40:00Z")
         local = t.astimezone(BOISE)
-        if not (17 <= local.hour <= 20): print(f"note: {slug} posts at {local.strftime('%a %b %d %-I:%M %p')} Boise, outside the usual 6:40 pm window")
+        if not (local.hour, local.minute) in ((12, 40), (18, 40)): print(f"note: {slug} posts at {local.strftime('%a %b %d %-I:%M %p')} Boise, outside the usual 12:40 pm and 6:40 pm slots")
         text = " ".join(str(v) for v in [p.get("caption", ""), p.get("hashtags", "")] + [str(s) for s in p.get("slides", [])])
         for pat, name in FORBIDDEN:
             if re.search(pat, text): die(f"{slug}: copy contains {name}; the copy rules forbid it")
