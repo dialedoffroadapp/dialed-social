@@ -166,7 +166,7 @@ def post2(post):
     y = gy + 3 * (th_ + 20) + 4
     d.rounded_rectangle([M, y, W - M, y + 112], radius=22, fill=INK)
     tracked(d, M + 32, y + 24, "RIDING SAG", F(SEMI, 22), BLUE, 2)
-    d.text((M + 32, y + 50), "105 mm", font=F(DISPLAY, 56), fill=WHITE, anchor="la")
+    d.text((M + 32, y + 50), post.get("sag_value", "105 mm"), font=F(DISPLAY, 56), fill=WHITE, anchor="la")
     d.text((W - M - 32, y + 56), post.get("sag_note", ""), font=F(MED, 24), fill=STEEL, anchor="rm")
     d.text((M, H - 106), "Clicks counted out from fully closed. A starting point, not a law.", font=F(MED, 26), fill=INK_SOFT, anchor="la")
     counter(d, "01 / 03", INK_SOFT)
