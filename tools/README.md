@@ -47,14 +47,18 @@ Every design draws the real mark from `tools/logo/` and sets type in Barlow Cond
 
 - Never "AI", "exact", "exactly", "perfect", "free trial". Never an em dash anywhere.
 - Numbers are starting points riders refine on the bike, counted out from fully closed, one change at a time. Never "do what the app says".
-- Stock figures come from the catalog row (the owner's manual values in `bike_models` and its generations). A Dialed column comes from a real baseline the app produced (a `setup_versions` row on prod for that bike, weight band, skill and terrain), never invented. If no clean row exists for the bike that week, no settings card that week.
+- Stock figures come from the catalog (`bike_model_specs` on prod: field, value, unit, counted_from, the manual it came from and its quote). A Dialed column comes from a real baseline the app produced (a `setup_versions` row on prod for a bike of that model and year, with the rider's weight band, skill and terrain), never invented. A bike without both halves gets no card; pick another bike.
 - No rider names, no account details. Weight is a band ("about 180 lb"), never someone's exact entry.
 - Captions end with one question. Hashtags: 3 to 5, specific to the post, the last one `#dialedoffroad` (Instagram counts only the first five since December 2025; more just dilutes the signal).
 - Under 2200 characters including hashtags.
 
 ## A week's mix
 
-Twelve posts, Monday to Saturday, two a day. The midday post (12:40 pm) is the keeper: a settings card for a bike people asked about (the `social_bike_requests` view on prod lists them), a save-worthy carousel (cheat sheet, clicker explainer, pre-ride checklist, sag how-to), a myth or "nobody tells you" list, a symptom-to-fix sheet. The evening post (6:40 pm) is the talker: a hot take, an app-screens post when there is a feature worth showing, a split (stock vs you), a one-slide answer to the week's most common comment. No two neighbouring posts with the same design, and no design more than three times in a week. At least two settings cards a week when clean rows exist, never more than one a day. Repeat a theme only after four weeks; `posts/manifest-*.json` and `tools/weeks/` are the record of what already ran.
+Twelve posts, Monday to Saturday, two a day (from the week of November 2, 2026).
+
+The midday post (12:40 pm) is a **bike card, every day**: one make, model and year, the owner's manual stock clickers and sag next to one real Dialed baseline for a rider band, framed as a starting point. Alternate the `sheet` and `split` designs day by day (sheet Monday, split Tuesday, and so on) so neither runs more than three times. Pick the bike in this order: a bike people asked about (`social_bike_requests`), then the models riders tune most in the app (`setup_versions` joined to `bikes`, last 60 days), then rotate brands and classes (250F, 450F, two-stroke, off-road) across years 2019 and newer. Never the same model-year twice in 26 weeks, never two bikes of the same brand on neighbouring days. A bike qualifies only when both halves exist: a sourced stock row set in `bike_model_specs` (fork_comp, fork_reb, shock_reb at least, `source_kind` oem_manual or oem_spec, prefer market us then all then eu, preset standard then null) and at least one `setup_versions` row for a bike of that model and year. About 180 model-years qualify today and the list grows as riders tune.
+
+The evening post (6:40 pm) is a **tip**: a hot take (`glow`), a numbered list of truths (`blue_list`), a cheat sheet or symptom-to-fix sheet (`paper_list`), a clicker explainer (`dials`), an app-screens post when there is a feature worth showing, or a one-slide answer to the week's most common comment. No tip design more than twice in a week, and no two neighbouring posts with the same design. Repeat a tip theme only after four weeks; `posts/manifest-*.json` and `tools/weeks/` are the record of what already ran.
 
 TikTok gets the same slides: the Sunday Review page ticks TikTok on every static post by default and the pipeline posts them as photo carousels there once TikTok is connected. Nothing about the week module changes for that.
 
