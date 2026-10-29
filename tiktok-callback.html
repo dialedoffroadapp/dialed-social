@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok connected | Dialed Offroad</title>
+<meta name="description" content="Finishes the TikTok sign-in for Dialed Offroad&#x27;s posting tool.">
+<link rel="icon" href="/tools/logo/icon.png">
+<style>
+:root { color-scheme: light dark; --bg: #0b0c10; --fg: #f5f7fc; --mute: #8a93a6; --blue: #1d9bf0; --panel: #151920; --line: #262b36; }
+@media (prefers-color-scheme: light) { :root { --bg: #f3f5fa; --fg: #0b0c10; --mute: #5b6475; --blue: #1a8fe0; --panel: #ffffff; --line: #d7dce6; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+header img { width: 40px; height: 40px; border-radius: 10px; }
+header a { color: var(--fg); text-decoration: none; font-weight: 700; letter-spacing: .02em; }
+nav a { color: var(--mute); text-decoration: none; margin-right: 14px; font-size: 14px; }
+nav a:hover { color: var(--blue); }
+h1 { font-size: 30px; line-height: 1.15; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 28px 0 8px; }
+p { margin: 0 0 12px; }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin: 4px 0; }
+.date { color: var(--mute); margin-bottom: 22px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 16px 0; }
+.btn { display: inline-block; background: var(--blue); color: #fff; padding: 10px 16px; border-radius: 999px; text-decoration: none; font-weight: 600; margin: 6px 8px 6px 0; }
+footer { margin-top: 40px; color: var(--mute); font-size: 13px; }
+footer a { color: var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<header><img src="/tools/logo/icon.png" alt=""><a href="/">Dialed Offroad</a><nav><a href="/">Home</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav></header>
+
+<h1>TikTok connected</h1>
+<p class="date">This page only exists to finish the one-time TikTok sign-in for Dialed Offroad's own posting tool.</p>
+<div class="card">
+<p id="msg">Reading the address bar...</p>
+<p><code id="url" style="word-break: break-all; font-size: 13px"></code></p>
+<button class="btn" id="copy" type="button" hidden>Copy this address</button>
+</div>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var msg = document.getElementById('msg'), out = document.getElementById('url'), btn = document.getElementById('copy');
+  if (q.get('code')) {
+    msg.textContent = 'TikTok sent back a code. Copy this whole address and paste it into the Terminal window that is waiting for it. Nothing here is stored or sent anywhere.';
+    out.textContent = location.href; btn.hidden = false;
+    btn.onclick = function () { navigator.clipboard.writeText(location.href).then(function () { btn.textContent = 'Copied'; }); };
+  } else if (q.get('error')) {
+    msg.textContent = 'TikTok returned an error: ' + (q.get('error_description') || q.get('error')) + '. Close this tab and run the script again.';
+  } else {
+    msg.textContent = 'Nothing to do here. This page is only used during sign-in.';
+  }
+})();
+</script>
+
+<footer>Atlas Systems LLC, Boise, Idaho. <a href="mailto:dialedoffroadapp@gmail.com">dialedoffroadapp@gmail.com</a></footer>
+</main>
+</body>
+</html>

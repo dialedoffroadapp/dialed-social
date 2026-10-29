@@ -93,6 +93,31 @@ def main():
 <p><a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Service</a> for the app.</p>
 """
     open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8").write(page("Dialed Offroad", home, "Dirt bike suspension setup app. Starting points you refine on the bike."))
+    cb = """
+<h1>TikTok connected</h1>
+<p class="date">This page only exists to finish the one-time TikTok sign-in for Dialed Offroad's own posting tool.</p>
+<div class="card">
+<p id="msg">Reading the address bar...</p>
+<p><code id="url" style="word-break: break-all; font-size: 13px"></code></p>
+<button class="btn" id="copy" type="button" hidden>Copy this address</button>
+</div>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var msg = document.getElementById('msg'), out = document.getElementById('url'), btn = document.getElementById('copy');
+  if (q.get('code')) {
+    msg.textContent = 'TikTok sent back a code. Copy this whole address and paste it into the Terminal window that is waiting for it. Nothing here is stored or sent anywhere.';
+    out.textContent = location.href; btn.hidden = false;
+    btn.onclick = function () { navigator.clipboard.writeText(location.href).then(function () { btn.textContent = 'Copied'; }); };
+  } else if (q.get('error')) {
+    msg.textContent = 'TikTok returned an error: ' + (q.get('error_description') || q.get('error')) + '. Close this tab and run the script again.';
+  } else {
+    msg.textContent = 'Nothing to do here. This page is only used during sign-in.';
+  }
+})();
+</script>
+"""
+    open(os.path.join(ROOT, "tiktok-callback.html"), "w", encoding="utf-8").write(page("TikTok connected | Dialed Offroad", cb, "Finishes the TikTok sign-in for Dialed Offroad's posting tool."))
     open(os.path.join(ROOT, "CNAME"), "w").write("media.dialedoffroad.app\n")
     open(os.path.join(ROOT, ".nojekyll"), "w").write("")
     print("wrote index.html, privacy.html, terms.html, CNAME, .nojekyll")
