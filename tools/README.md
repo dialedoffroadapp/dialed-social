@@ -49,7 +49,7 @@ Every design draws the real mark from `tools/logo/` and sets type in Barlow Cond
 - Numbers are starting points riders refine on the bike, counted out from fully closed, one change at a time. Never "do what the app says".
 - Stock figures come from the catalog row (the owner's manual values in `bike_models` and its generations). A Dialed column comes from a real baseline the app produced (a `setup_versions` row on prod for that bike, weight band, skill and terrain), never invented. If no clean row exists for the bike that week, no settings card that week.
 - No rider names, no account details. Weight is a band ("about 180 lb"), never someone's exact entry.
-- Captions end with one question. Hashtags: 8 to 12, always `#dialedoffroad`.
+- Captions end with one question. Hashtags: 3 to 5, specific to the post, the last one `#dialedoffroad` (Instagram counts only the first five since December 2025; more just dilutes the signal).
 - Under 2200 characters including hashtags.
 
 ## A week's mix

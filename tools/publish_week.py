@@ -54,7 +54,10 @@ def check(week, week_id):
         for pat, name in FORBIDDEN:
             if re.search(pat, text): die(f"{slug}: copy contains {name}; the copy rules forbid it")
         if len((p.get("caption", "") + "\n\n" + p.get("hashtags", ""))) > 2200: die(f"{slug}: caption over 2200 characters")
-        if len(re.findall(r"#\w+", p.get("hashtags", ""))) > 30: die(f"{slug}: more than 30 hashtags")
+        tags = re.findall(r"#\w+", p.get("hashtags", ""))
+        if not (1 <= len(tags) <= 5): die(f"{slug}: hashtags must be 3 to 5 (Instagram counts the first five), got {len(tags)}")
+        if tags[-1].lower() != "#dialedoffroad": die(f"{slug}: the last hashtag must be #dialedoffroad")
+        if len(tags) < 3: print(f"note: {slug} has only {len(tags)} hashtags; 3 to 5 is the rule")
         if not p.get("title"): die(f"{slug}: needs a title")
     print(f"checked {len(week)} posts for week {week_id}")
 
