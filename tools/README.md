@@ -62,6 +62,29 @@ The evening post (6:40 pm) is a **tip**: a hot take (`glow`), a numbered list of
 
 TikTok gets the same slides: the Sunday Review page ticks TikTok on every static post by default and the pipeline posts them as photo carousels there once TikTok is connected. Nothing about the week module changes for that.
 
+## Animated explainer reels (from the week of November 8, 2026)
+
+One animated reel a day, Monday to Saturday, at **3:40 pm Boise** (between the 12:40 pm and 6:40 pm posts; 22:40Z in MST, 21:40Z in MDT). They live in `tools/anim/`:
+
+| file | what |
+|---|---|
+| `xray.py` | X-ray fork cutaway: oil through the piston, spring, travel meter. Beats use motions from `MOTIONS` (land_slow, slam, harsh, rebound, rebound_fast, pack, dive, dialed, chop_dialed) |
+| `oneclick.py` | macro clicker, needle and bleed gap, damping graph, "same number, different setting" |
+| `pov.py` | POV hook, setup sheet, comparison bars, sag gauge, three red stamps, punchline |
+| `app.py` | the app moment every reel ends on: the real "How was it?" screen (`tools/shots/02`) with a tap on the matching chip, then the change card (part, from, to, which way), or two real screens (`screens`, `lines`) |
+| `catalog.py` | reviewed specs, one per theme (`id`). Add new themes here, in the same shape |
+| `build.py` | renders and writes the page documents |
+
+```
+python3 tools/anim/build.py <week> <date>=<spec id> ... [--sheet]
+```
+
+`--sheet` draws contact sheets to `out/anim/<week>/` for checking; without it each reel renders to `reels/<date>-anim-<id>.mp4` with a cover `reels/<date>-anim-<id>-cover.jpg`, and `out/anim/<week>/reels.json` gets one Sunday Review `reels` document per reel (status `drafting`, `video_url` on raw.githubusercontent.com, `parts` empty). build.py fails on the copy rules above.
+
+Then: push the repo; for each document upload the cover and the mp4 to the page's asset store (Artifact publish, `asset: true`) and set `poster_id` and `preview_id` to the returned ids (the id is the hex part of `/_blob/<id>`), drop the two `_local_*` keys, and `ArtifactData set` collection `reels`, doc_id = slug. They show under This week with an Approve button. Approving makes them `ready`; the hourly sync queues them (it skips the upload step because `video_url` is set and `parts` is empty).
+
+Week mix: rotate the templates xray, oneclick, pov, xray, oneclick, pov (Monday to Saturday), never the same template on neighbouring days. A theme (`id`) repeats only after four weeks (check `out/anim/*/reels.json`). When the catalog runs short, write new specs into `catalog.py`: a new symptom, clicker or POV situation, the app chip that matches it from `app.CHIPS`, and a change card that points the right way (in = clockwise = more damping; rebound in = slower). Suspension claims must be ones a suspension tech would sign off on; numbers on screen are illustrative and framed as starting points. No bike animations.
+
 ## What is not here
 
 Posting, comments, ads, and the page itself live in the app repo (`supabase/functions/social-*`) and on the Sunday Review page. This repo is only the images and the week modules, public because Instagram has to fetch the images from somewhere.
