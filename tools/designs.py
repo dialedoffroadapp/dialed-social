@@ -281,7 +281,16 @@ def post4(post):
         d.text((rx, y), l, font=lf, fill=WHITE, anchor="la")
         y += 60
     d.text((M, H - 80), "@dialed_offroad", font=F(MED, 24), fill=(190, 198, 212), anchor="la")
-    return [img]
+    imgs = [img]
+    # optional carousel: slides after the first (points, closer, table...) render in the plain dark design
+    rest = post["slides"][1:]
+    if rest:
+        n = len(post["slides"])
+        fns = {"hot": _classic.slide_hot, "cover": _classic.slide_cover, "point": _classic.slide_point, "symptom": _classic.slide_symptom,
+               "table": _classic.slide_table, "points": _classic.slide_points, "closer": _classic.slide_closer}
+        for k, sl in enumerate(rest, 2):
+            imgs.append(fns[sl["type"]](sl, f"{k}/{n}"))
+    return imgs
 
 
 # ------------------------------------------------------------------ 5. Light cheat sheet with flow boxes
@@ -311,7 +320,7 @@ def post5(post):
             total = bh + 110 + ph + 48 + wh
             y = max(190, int((H - 150 - total) / 2) + 60)
             d.rounded_rectangle([M, y, W - M, y + bh], radius=26, fill=INK)
-            tracked(d, M + 48, y + 44, "SYMPTOM", F(SEMI, 26), STEEL, 5)
+            tracked(d, M + 48, y + 44, s.get("label", "SYMPTOM"), F(SEMI, 26), STEEL, 5)
             draw_block(d, M + 48, y + 106, lines, font, size, 0.96, WHITE)
             y += bh + 24
             cx = W // 2
@@ -319,11 +328,11 @@ def post5(post):
             d.polygon([(cx - 22, y + 36), (cx + 22, y + 36), (cx, y + 64)], fill=BLUE)
             y += 86
             d.rounded_rectangle([M, y, W - M, y + ph], radius=26, fill=BLUE)
-            tracked(d, M + 48, y + 44, "START HERE", F(SEMI, 26), (200, 230, 252), 5)
+            tracked(d, M + 48, y + 44, s.get("label2", "START HERE"), F(SEMI, 26), (200, 230, 252), 5)
             draw_block(d, M + 48, y + 104, fl, pf, 64, 1.1, WHITE)
             y += ph + 48
             draw_block(d, M, y, wl, wf, 38, 1.42, INK_SOFT)
-            d.text((M, H - 106), "In = more damping.  Out = less.  One change at a time.", font=F(MED, 24), fill=INK_SOFT, anchor="la")
+            d.text((M, H - 106), post.get("paper_footer", "In = more damping.  Out = less.  One change at a time."), font=F(MED, 24), fill=INK_SOFT, anchor="la")
         else:
             font, lines, size = fit(s["head"], DISPLAY, W - 2 * M, 520, 140, 96, 0.96)
             y = draw_block(d, M, 300, lines, font, size, 0.96, INK)
@@ -548,7 +557,7 @@ DESIGNS = {
     "glow": post1,        # one slide: carbon with a blue glow, a hot take in big type (slide types: hot)
     "sheet": post2,       # setup sheet: blue header, six value tiles, then the stock vs Dialed table, points, closer (cover, table, points, closer)
     "blue_list": post3,   # all-blue carousel with stickers, numbered points (cover, point..., closer)
-    "split": post4,       # one slide: diagonal STOCK / YOU split (hot) with post["split"] labels
+    "split": post4,       # diagonal STOCK / YOU split (hot) with post["split"] labels; extra slides (points, closer) render in the plain dark design
     "paper_list": post5,  # light paper carousel with flow boxes, symptom -> fix (cover, symptom..., closer)
     "dials": post6,       # carbon carousel with drawn clicker dials (cover, point with tag..., closer)
     "screens": post7,     # app screens carousel from tools/shots (post["frames"], big, sticker, footer)

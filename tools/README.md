@@ -35,8 +35,8 @@ WEEK = [
 | `glow` | one `hot` slide: `head`, `sub` | carbon, blue glow, the take in big type, a body paragraph |
 | `sheet` | `cover` (head, sub), `table` (rows of (label, stock, dialed)), `points` (items), `closer` | setup sheet: blue header with the bike, six value tiles (`post["tiles"]`: (label, value, sub, chip)), then the stock vs Dialed table, then the points and the closer. Post keys: `sheet_title`, `sheet_sub`, `tiles`, `sag_note` |
 | `blue_list` | `cover` (eyebrow, head, sub), `point` x N (num, head, body), `closer` (head, sub, footer) | all blue with black stickers; numbered truths |
-| `split` | one `hot` slide (head) | diagonal STOCK / YOU split; `post["split"] = {left, left_lines, right, right_lines}` |
-| `paper_list` | `cover`, `symptom` x N (num, head, why, fix), `closer` | light paper, flow boxes symptom → why → fix; the save-this cheat sheet |
+| `split` | `hot` (head), then optional `points`, `closer` (from the week of Nov 8, bike cards run it as a 3-slide carousel) | diagonal STOCK / YOU split; `post["split"] = {left, left_lines, right, right_lines}`; slides after the first render in the plain dark design |
+| `paper_list` | `cover`, `symptom` x N (num, head, why, fix, optional `label`/`label2` to rename the SYMPTOM / START HERE boxes), `closer` | light paper, flow boxes symptom → why → fix; the save-this cheat sheet. `post["paper_footer"]` overrides the footer line |
 | `dials` | `cover`, `point` x N (tag, head, body; a point tagged `NOT A CLICKER` gets the sag treatment), `closer` | carbon with drawn clicker dials; `post["dials"]` names the five dials on the cover |
 | `screens` | none needed; `post["frames"]` = list of (line1, line2, sub, shot_index 1..6), `big`, `sticker`, `footer` | app screenshots in phone frames from `tools/shots/` |
 | `classic` | any mix of `hot`, `cover`, `point`, `symptom`, `table`, `points`, `closer` | the plain dark design from `render.py`; the fallback |
