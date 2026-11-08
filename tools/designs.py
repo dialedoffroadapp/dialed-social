@@ -135,8 +135,12 @@ def post2(post):
     img, d = canvas(LIGHT)
     d.rectangle([0, 0, W, 250], fill=BLUE)
     tracked(d, M, 70, "SETUP SHEET", F(SEMI, 28), WHITE, 5)
-    d.text((M, 110), post.get("sheet_title", post["slides"][0]["head"]), font=F(DISPLAY, 104), fill=WHITE, anchor="la")
     mw = mark("white", 72)
+    title = post.get("sheet_title", post["slides"][0]["head"])
+    size, room = 104, W - 2 * M - mw.width - 24   # keep long titles clear of the mark and the edge
+    while size > 64 and d.textlength(title, font=F(DISPLAY, size)) > room:
+        size -= 2
+    d.text((M, 110 + (104 - size) // 2), title, font=F(DISPLAY, size), fill=WHITE, anchor="la")
     img.paste(mw, (W - M - mw.width, 62), mw)
     d = ImageDraw.Draw(img)
     d.text((M, 284), post.get("sheet_sub", post["slides"][0].get("sub", "")), font=F(MED, 32), fill=INK_SOFT, anchor="la")

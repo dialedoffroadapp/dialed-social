@@ -29,9 +29,9 @@ WEEK = [
  # ------------------------------------------------------------------ Mon Nov 9
  dict(BASE, **{
   "slug": "2026-11-09-300exc-setup-sheet",
-  "title": "Settings card: 2025 KTM 300 EXC",
+  "title": "Settings card: 2025 KTM 300 EXC / XC-W",
   "design": "sheet", "kind": "carousel", "scheduled_at": _at(9, 12),
-  "caption": "2025 KTM 300 EXC. About 160 lb, fast, hard enduro, stability and grip the goals. This is the baseline "
+  "caption": "2025 KTM 300 EXC and 300 XC-W. Same manual, same stock numbers, so this one is for both. About 160 lb, fast, hard enduro, stability and grip the goals. This is the baseline "
              "Dialed built, next to the standard settings from KTM's 2025 owner's manual for the 250 and 300 EXC and "
              "XC-W.\n\n"
              "Stock is 15 and 17 on the fork, 15 clicks and 2 turns on the shock, 15 on shock rebound, 110 mm of "
@@ -40,16 +40,16 @@ WEEK = [
              "harsh in the rocks, come back toward stock two clicks at a time.\n\n"
              "All counted out from fully closed. Starting points riders refine on the bike, one change at a time.\n\n"
              "What's your 300 running for the gnarly stuff?",
-  "hashtags": "#ktm #300exc #hardenduro #twostroke #dialedoffroad",
+  "hashtags": "#ktm #300exc #300xcw #hardenduro #dialedoffroad",
   "story": "Poll on the sheet slide: \"Hard enduro: firmer or softer than stock?\" Firmer / Softer / Never changed it.",
   "slides": [
-   {"type": "cover", "eyebrow": "DIALED BASELINE", "head": "2025 KTM 300 EXC",
+   {"type": "cover", "eyebrow": "DIALED BASELINE", "head": "2025 KTM 300 EXC / XC-W",
     "sub": "about 160 lb  ·  fast  ·  hard enduro", "footer": "Swipe for the numbers"},
-   {"type": "table", "title": "STOCK VS DIALED", "sub": "2025 KTM 300 EXC  ·  about 160 lb  ·  fast  ·  hard enduro",
+   {"type": "table", "title": "STOCK VS DIALED", "sub": "2025 KTM 300 EXC / XC-W  ·  about 160 lb  ·  fast  ·  hard enduro",
     "rows": [("Fork compression", "15", "12"), ("Fork rebound", "17", "12"), ("Shock low-speed comp", "15", "10"),
              ("Shock high-speed comp", "2 turns", "1 1/2 turns"), ("Shock rebound", "15", "12"),
              ("Rider sag", "110 mm", "110 mm"), ("Springs for 65 to 75 kg", "4.2 / 66 N/mm", "manual's row")],
-    "note": "Clicks counted out from fully closed. Stock figures from the 2025 KTM 250/300 EXC owner's manual."},
+    "note": "Clicks counted out from fully closed. Stock figures from the 2025 KTM 250/300 EXC and XC-W owner's manual."},
    {"type": "points", "title": "WHAT MOVED", "items": [
     ("Fork rebound, 5 clicks in", "A slower return keeps the front calm off ledges."),
     ("Shock low-speed, 5 clicks in", "More hold for the rear on steep climbs."),
@@ -59,7 +59,7 @@ WEEK = [
    {"type": "closer", "head": "A STARTING POINT. YOU FINISH IT ON THE BIKE.",
     "sub": "Ride it, log how it felt, change one thing at a time.", "cta": CTA, "footer": FOOT},
   ],
-  "sheet_title": "2025 KTM 300 EXC",
+  "sheet_title": "2025 KTM 300 EXC / XC-W",
   "sheet_sub": "about 160 lb  ·  fast  ·  hard enduro  ·  WP XPLOR fork",
   "tiles": [("FORK COMP", "12", "stock 15", "3 clicks in"),
             ("FORK REBOUND", "12", "stock 17", "5 clicks in"),

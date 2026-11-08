@@ -1,4 +1,4 @@
-select slug, status, scheduled_at at time zone 'America/Boise' as boise from public.social_enqueue($q$2026-11-09-300exc-setup-sheet$q$, $q$carousel$q$, $q$2025 KTM 300 EXC. About 160 lb, fast, hard enduro, stability and grip the goals. This is the baseline Dialed built, next to the standard settings from KTM's 2025 owner's manual for the 250 and 300 EXC and XC-W.
+select slug, status, scheduled_at at time zone 'America/Boise' as boise from public.social_enqueue($q$2026-11-09-300exc-setup-sheet$q$, $q$carousel$q$, $q$2025 KTM 300 EXC and 300 XC-W. Same manual, same stock numbers, so this one is for both. About 160 lb, fast, hard enduro, stability and grip the goals. This is the baseline Dialed built, next to the standard settings from KTM's 2025 owner's manual for the 250 and 300 EXC and XC-W.
 
 Stock is 15 and 17 on the fork, 15 clicks and 2 turns on the shock, 15 on shock rebound, 110 mm of rider sag. Dialed went 3 clicks in on fork comp, 5 in on fork rebound, 5 in on low-speed, half a turn in on high-speed and 3 in on shock rebound. Sag stays at 110. Five clicks is a big move, so if it feels harsh in the rocks, come back toward stock two clicks at a time.
 
@@ -6,7 +6,7 @@ All counted out from fully closed. Starting points riders refine on the bike, on
 
 What's your 300 running for the gnarly stuff?
 
-#ktm #300exc #hardenduro #twostroke #dialedoffroad$q$, $q$2025 KTM 300 EXC. About 160 lb, fast, hard enduro, stability and grip the goals. This is the baseline Dialed built, next to the standard settings from KTM's 2025 owner's manual for the 250 and 300 EXC and XC-W.
+#ktm #300exc #300xcw #hardenduro #dialedoffroad$q$, $q$2025 KTM 300 EXC and 300 XC-W. Same manual, same stock numbers, so this one is for both. About 160 lb, fast, hard enduro, stability and grip the goals. This is the baseline Dialed built, next to the standard settings from KTM's 2025 owner's manual for the 250 and 300 EXC and XC-W.
 
 Stock is 15 and 17 on the fork, 15 clicks and 2 turns on the shock, 15 on shock rebound, 110 mm of rider sag. Dialed went 3 clicks in on fork comp, 5 in on fork rebound, 5 in on low-speed, half a turn in on high-speed and 3 in on shock rebound. Sag stays at 110. Five clicks is a big move, so if it feels harsh in the rocks, come back toward stock two clicks at a time.
 

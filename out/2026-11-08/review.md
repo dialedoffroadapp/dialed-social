@@ -1,6 +1,6 @@
 # Week 2026-11-08: 12 posts
 
-- **Mon Nov 9, 12:40 PM** · Settings card: 2025 KTM 300 EXC · carousel, 3 slides · design `sheet` · `2026-11-09-300exc-setup-sheet`
+- **Mon Nov 9, 12:40 PM** · Settings card: 2025 KTM 300 EXC / XC-W · carousel, 3 slides · design `sheet` · `2026-11-09-300exc-setup-sheet`
   Story: Poll on the sheet slide: "Hard enduro: firmer or softer than stock?" Firmer / Softer / Never changed it.
 - **Mon Nov 9, 6:40 PM** · Carousel: riding sag by manual cheat sheet · carousel, 9 slides · design `paper_list` · `2026-11-09-sag-by-manual`
   Story: Quiz sticker on the Yamaha slide: "Yamaha's sag window?" 80 to 90 / 90 to 100 / 105 flat.
